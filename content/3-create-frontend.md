@@ -67,10 +67,10 @@ This is YOUR creation. Choose what feels right:
 
 1. Create a new file: `client/index.html`
 2. Design a simple interface with:
-   - Dropdown for **Day of Week** (Monday-Sunday)
-   - Dropdown for **Airport** (loaded from your API)
-   - Button to **Check Delay**
-   - Area to display the **Result**
+    - Dropdown for **Day of Week** (Monday-Sunday)
+    - Dropdown for **Airport** (loaded from your API)
+    - Button to **Check Delay**
+    - Area to display the **Result**
 
 **💡 Hint:** Ask Copilot: *"Create an HTML form with dropdowns for day of week and airports"*
 
@@ -85,9 +85,11 @@ When the page loads, fetch airports from your API:
 fetch('http://localhost:5000/airports')
   .then(response => response.json())
   .then(airports => {
-    // Populate the dropdown
+     // Populate the dropdown
   });
 ```
+
+**💡 Hint:** Ask Copilot: *"Write JavaScript to fetch airports from the API and populate a dropdown menu"*
 
 ---
 
@@ -103,9 +105,11 @@ const airport = document.getElementById('airport').value;
 fetch(`http://localhost:5000/predict?day_of_week=${day}&airport_id=${airport}`)
   .then(response => response.json())
   .then(result => {
-    // Display the prediction
+     // Display the prediction
   });
 ```
+
+**💡 Hint:** Ask Copilot: *"Create a function to call the /predict API endpoint and handle the response"*
 
 ---
 
@@ -118,6 +122,8 @@ Make the result meaningful to travelers:
 | 0-20% | "Low risk of delay! ✈️" | Green |
 | 20-40% | "Moderate risk 🤔" | Yellow |
 | 40%+ | "High delay risk! ⚠️" | Red |
+
+**💡 Hint:** Ask Copilot: *"Add color-coded styling for delay risk levels (green/yellow/red) based on probability"*
 
 ---
 
