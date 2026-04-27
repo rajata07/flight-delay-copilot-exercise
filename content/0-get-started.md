@@ -93,8 +93,6 @@ Go to: **[github.com/rajata07/flight-delay-copilot-exercise](https://github.com/
 
 Click the green **"<> Code"** button → Select **"Codespaces"** tab → Click **"Create codespace on main"**
 
-![How to Launch GitHub Codespaces](../images/codespaces.jpg)
-
 #### Step 3: Wait ~2 Minutes
 
 Codespaces will:
